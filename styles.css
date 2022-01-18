@@ -1,0 +1,89 @@
+.one{
+    height: 100vh;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.two{
+    position: fixed;
+    top: 0vh;
+    left: 0;
+    height: 100vh;
+    background-image: url("demo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: circle(0% at center center); 
+}
+
+.three{
+    position: relative;
+    margin-top: 100vh;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.four{
+    color: white;
+    width: 100%;
+    height: 20vh;
+}
+
+.five{
+    position: relative;
+    /* bottom: 40vh; */
+    top: 40vh;
+}
+
+.six{
+    position: relative;
+    top: 10vh;
+}
+
+.seven{
+    position: fixed;
+    top: 10vh;
+}
+
+.circle1{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+}
+
+.circle2{
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+}
+
+.circle3{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+}
+
+.circle4{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+}
