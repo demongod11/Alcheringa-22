@@ -5,18 +5,63 @@
     font-family: 'Lato', sans-serif;
 }
 
-.two{
+.video_player{
     position: fixed;
     top: 0vh;
     left: 0;
     height: 100vh;
-    background-image: url("demo.png");
+    width: 100vw;
+    background-image: url("cover.png");
     background-repeat: no-repeat;
     background-size: cover;
+    /* overflow: hidden; */
     clip-path: circle(0% at center center); 
 }
 
-.three{
+.video{
+    width: 100%;
+}
+
+.play_button{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+}
+
+.play_button:focus {
+    outline: none;
+  }
+
+.player_controls{
+    position: absolute;
+    bottom: 10vh;
+    height: 10vh;
+    width: 100%;
+    transform: translateY(100%) translateY(-5px);
+    transition: 0.3s;
+    flex-wrap: wrap;
+}
+
+.video_player:hover .player_controls {
+    transform: translateY(0);
+}
+
+.video_progress {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: rgb(191, 191, 191);
+}
+
+.video_progress_filled {
+    width: 100%;
+    background: white;
+}
+
+.next{
     position: relative;
     margin-top: 100vh;
     font-size: 24px;
@@ -24,32 +69,28 @@
     font-family: 'Lato', sans-serif;
 }
 
-.four{
+.trigger_div{
     color: white;
     width: 100%;
     height: 20vh;
 }
 
-.five{
+.content{
     position: relative;
-    /* bottom: 40vh; */
     top: 40vh;
+    height: 40vh;
+    width: 70vw;
 }
 
-.six{
-    position: relative;
-    top: 10vh;
-}
-
-.seven{
+.c_in{
     position: fixed;
     top: 10vh;
 }
 
 .circle1{
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 80vh;
+    height: 80vh;
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(204, 204, 204);
@@ -57,10 +98,10 @@
 
 .circle2{
     position: absolute;
-    top: 75px;
-    left: 75px;
-    width: 450px;
-    height: 450px;
+    top: 10vh;
+    left: 10vh;
+    width: 60vh;
+    height: 60vh;
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(204, 204, 204);
@@ -68,10 +109,10 @@
 
 .circle3{
     position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 250px;
-    height: 250px;
+    top: 14vh;
+    left: 14vh;
+    width: 32vh;
+    height: 32vh;
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(204, 204, 204);
@@ -79,10 +120,10 @@
 
 .circle4{
     position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 150px;
-    height: 150px;
+    top: 6vh;
+    left: 6vh;
+    width: 20vh;
+    height: 20vh;
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(204, 204, 204);
